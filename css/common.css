@@ -1,0 +1,44 @@
+/* 
+1. **박스 모델**: `display`, `width`, `height`, `margin`, `padding`
+2. **텍스트**: `font-size`, `line-height`, `color`, `text-align`
+3. **스타일**: `background`, `border`, `box-shadow`, `transition`
+4. **기타**: `cursor`, `z-index`, `position` 등
+*/
+
+:root {
+  /* Layout */
+  --max-width: 1276px;
+
+  /* Font Sizes */
+  --font-2xl: 26px; /* 가장 큰 텍스트 (배너, 강조 문구 등) */
+  --font-xl: 18px; /* 제목용 */
+  --font-lg: 16px; /* 본문 기본 */
+  --font-md: 14px; /* 카드 내용 */
+  --font-sm: 11px; /* 카드 내 태그, 칩 */
+
+  /* color */
+  --primary-color: #5865f2;
+  --gray-color: #999;
+}
+
+*,
+body,
+html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+}
+.wrap {
+  width: var(--max-width) !important;
+}
+
+.main_contean {
+  height: 100vh;
+
+  /* 임시 개발환경에서 범위 체크용 */
+  background-color: #cfcfcf;
+}
