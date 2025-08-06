@@ -36,7 +36,7 @@ body {
   width: var(--max-width) !important;
 }
 
-.main_contain {
+.main_container {
   height: 100vh;
 
   /* 임시 개발환경에서 범위 체크용 */
