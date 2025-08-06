@@ -4,3 +4,86 @@
 3. **스타일**: `background`, `border`, `box-shadow`, `transition`
 4. **기타**: `cursor`, `z-index`, `position` 등
 */
+
+/* === 메인 섹션 === */
+.main-section {
+  display: flex;
+  flex-direction: column;
+  max-width: 900px;
+  width: 100%;
+  margin: 5rem auto 0;
+  padding: 1.5rem 1.5rem 5rem;
+}
+/* === 768px 이하 화면(모바일)에서 상단 마진 축소 === */
+@media (max-width: 768px) {
+  .main-section {
+    margin-top: 1rem;
+  }
+}
+
+/* === 메인 제목 === */
+.main-title {
+  display: block;
+  margin-top: 2.5rem;
+  font-size: 36px; /* 필요하면 var(--font-2xl)로 교체 가능 */
+  font-weight: 800;
+  line-height: 1.265;
+  letter-spacing: -0.005em;
+  color: var(--color-text, #000); /* 공통 변수 활용 */
+  overflow-wrap: break-word;
+}
+/* === 화면 폭 768px 이하일 때 글자 크기 축소 === */
+@media (max-width: 768px) {
+  .main-title {
+    font-size: 24px;
+    margin-top: 1rem;
+  }
+}
+
+/* === 사용자 정보 === */
+.user-info {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-top: 2rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 2px solid #f2f2f2;
+  list-style: none;
+}
+
+/* === 모집 정보 === */
+.information {
+  display: block;
+  margin-top: 2rem;
+  border: 2px solid #d1d1d1;
+  border-radius: 30px;
+}
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 3fr);
+  row-gap: 24px;
+  margin-top: 30px;
+  list-style: none;
+  padding: 0;
+}
+
+.list {
+  display: flex;
+  gap: 12px;
+  padding: 0;
+  margin: 0;
+}
+
+/* --- 모집 정보 텍스트 --- */
+.info-title {
+  font-size: var(--font-xl); /* 공통 변수 적용 */
+  font-weight: 700;
+  color: var(--color-text, #000);
+}
+
+.info-content {
+  font-size: var(--font-xl); /* 공통 변수 적용 */
+  font-weight: 700;
+  color: var(--gray-color, #989898);
+}
