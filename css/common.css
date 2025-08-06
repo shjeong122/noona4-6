@@ -42,3 +42,63 @@ body {
   /* 임시 개발환경에서 범위 체크용 */
   background-color: #cfcfcf;
 }
+
+/* navbar area */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+button {
+  border: none;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.logo > img {
+  width: 105px;
+  height: auto;
+}
+.nav_brand {
+  font-weight: 700;
+  color: #333;
+  font-size: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  justify-items: center;
+  margin-left: 10px;
+}
+.nav_buttons {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-right: 10px;
+}
+.button_register {
+  color: #fff;
+  background-color: #81e1cf;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 22px;
+  border-radius: 36px;
+  height: 42px;
+}
+.button_question {
+  border: 1px solid #dddddd;
+  color: #333;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 8px 22px;
+  border-radius: 36px;
+  height: 42px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav_buttons > i {
+  font-size: 20px;
+  cursor: pointer;
+}
