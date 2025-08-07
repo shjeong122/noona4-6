@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/common.css" />
     <!-- main 스타일 -->
     <link rel="stylesheet" href="style.css" />
+    <!-- 공통 JS 연결 -->
+    <script src="../js/common.js"></script>
     <title>Document</title>
     <!-- bootstap-link -->
     <link
@@ -84,16 +86,5 @@
       integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
       crossorigin="anonymous"
     ></script>
-<script>
-  document.getElementById('icon_menubar').addEventListener('click', function (e) {
-    e.preventDefault(); // a 태그의 기본 동작 방지 (페이지 이동)
-    const menu = document.getElementById('nav_mobile_menu');
-    if (menu.style.display === 'none' || menu.style.display === '') {
-      menu.style.display = 'block'; // 메뉴 보이기
-    } else {
-      menu.style.display = 'none';  // 메뉴 숨기기
-    }
-  });
-</script>
   </body>
 </html>
