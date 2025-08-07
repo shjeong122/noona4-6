@@ -37,10 +37,8 @@ body {
 }
 
 .main_container {
-  height: 100vh;
-
   /* 임시 개발환경에서 범위 체크용 */
-  background-color: #cfcfcf;
+  background-color: white;
 }
 
 /* navbar area */
@@ -59,7 +57,7 @@ button {
   align-items: center;
 }
 .logo > img {
-  width: 105px;
+  width: 80px;
   height: auto;
 }
 .nav_brand {
@@ -69,7 +67,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   justify-items: center;
-  margin-left: 10px;
+  margin-left: 20px;
 }
 .nav_buttons {
   display: flex;
@@ -79,16 +77,17 @@ button {
 }
 .button_register {
   color: #fff;
-  background-color: #81e1cf;
+  background-color: #5865f2;
   font-size: 16px;
   font-weight: 700;
   padding: 8px 22px;
   border-radius: 36px;
   height: 42px;
 }
-.button_question {
+.button_mypage {
   border: 1px solid #dddddd;
-  color: #333;
+  background-color: #999;
+  color: white;
   font-size: 16px;
   font-weight: 700;
   padding: 8px 22px;
@@ -101,4 +100,86 @@ button {
 .nav_buttons > i {
   font-size: 20px;
   cursor: pointer;
+}
+
+.header_icon{
+  text-decoration: none;
+  color: #333;
+  font-size: 26px;
+  margin-left: 15px;
+}
+.header_icon_mb {
+  display: none;
+  text-decoration: none;
+  color: #333;
+  font-size: 26px;
+  margin-left: 15px;
+}
+.nav_mobile_menu {
+  display: none;
+}
+
+/* Footer */
+.footer_container {
+  background-color: #5865f2;
+  color: white;
+  width: 100%;
+  max-width: 2000px;
+}
+.footer_first_row a {
+  color: white;
+}
+.footer_first_row {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+.footer_text{
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+footer {
+  border-radius: 30px;
+  border-color: #5865f2;
+  background-color: #5865f2;
+}
+.footer_nav_brand {
+  font-weight: 700;
+  color: white;
+  font-size: 30px;
+  cursor: pointer;
+  text-decoration: none;
+  justify-items: center;
+}
+
+@media screen and (max-width:48rem) {
+    .header_icon_mb{
+      display: block;
+    }
+    .nav_buttons button {
+      display: none;
+    }
+    .logo>img {
+      width: 50px;
+      height: auto;
+    }
+    .nav_brand{
+      margin-left: 10px;
+    }
+    footer{
+      border-radius: 0px;
+    }
+    .nav_mobile_menu {
+      display: none;
+      width: 100%;
+      background-color: grey;
+      color: white;
+    }
+    .nav_mobile_menu>p{
+      width: 100%;
+      text-align: center;
+      margin: 10px 0;
+      border-bottom: white;
+    }
 }

@@ -4,3 +4,7 @@
 3. **스타일**: `background`, `border`, `box-shadow`, `transition`
 4. **기타**: `cursor`, `z-index`, `position` 등
 */
+
+.main_contean{
+    border: 1px solid red;
+}
