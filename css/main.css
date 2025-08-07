@@ -5,41 +5,47 @@
 4. **기타**: `cursor`, `z-index`, `position` 등
 */
 
-
-
 /* main area */
-.title_popular {
+a {
+  text-decoration: none;
+}
+/* 이번주 인기글_title */
+.popular {
+  margin-right: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
+}
+.popular_title {
   display: flex;
   align-items: center;
   justify-content: space-between;
   font-size: 20px;
-  margin-top: 30px;
-  /* border: 1px solid red; */
 }
-.title_popular > h2 {
+.popular_title > h2 {
   color: #000;
   font-size: 25px;
   font-style: normal;
   font-weight: 700;
   line-height: 100%;
   letter-spacing: -0.08em;
-  margin: 25px 0;
+  margin: 25px 20px;
+}
+.popular_title_icon {
+  margin-right: 10px;
+}
+
+/* card area */
+.contents {
+  display: flex;
+  justify-content: center;
 }
 .card {
-  width: 300px;
   color: #000;
-  display: flex;
   width: 340px;
-  gap: 10px;
   border-radius: 50px;
   border: 2px solid #d1d1d1;
   background: #fff;
-  text-decoration: none;
-}
-.popular {
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
 }
 .box_button {
   display: flex;
@@ -56,7 +62,6 @@
   font-weight: 600;
   line-height: normal;
 }
-
 .box_category {
   border-radius: 20px;
   padding: 4px 8px;
@@ -65,6 +70,7 @@
   color: #656565;
   font-weight: 900;
   font-size: 12px;
+  align-content: center;
   line-height: normal;
   letter-spacing: -0.04em;
 }
@@ -73,44 +79,45 @@
   margin: 0;
   color: #000;
   font-size: 15px;
-  font-style: normal;
   font-weight: 600;
-  line-height: 140%;
   letter-spacing: -0.7px;
-  /* word-break: break-all; */
-  /* overflow: hidden; */
   margin-top: 10px;
 }
 .d_day {
   color: #999;
   margin: 20px 0 0 0;
   font-size: 14px;
-  text-decoration: none;
   font-weight: 600;
 }
 .box_count {
   color: #4e4e4e;
   font-size: 10px;
-  font-style: normal;
   font-weight: 500;
-  line-height: 100%;
   letter-spacing: -0.4px;
   text-align: end;
-  margin-top: 10px;
 }
-.contain_main {
-    margin-top: 20px;
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-    font-weight: 700;
-    font-size: 24px;
-    cursor: pointer;
+
+/* main_nav area */
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px 20px;
+  margin: 0 auto;
+}
+.main_contents {
+  margin-top: 20px;
+  /* display: flex; */
+  align-items: center;
+  margin-right: 24px;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
 }
 .nav-link {
-    margin-left: 8px;
-    color: #868e96;
-    font-weight: 700;
-    font-size: 24px;
-    cursor: pointer;
+  padding-left: 20px;
+  color: black;
+  font-weight: 700;
+  font-size: 24px;
+  cursor: pointer;
 }

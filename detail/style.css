@@ -54,15 +54,13 @@
 /* === 모집 정보 === */
 .information {
   display: block;
-  margin-top: 2rem;
-  border: 2px solid #d1d1d1;
-  border-radius: 30px;
+  margin: 2rem 0;
 }
 
 .info-grid {
   display: grid;
   grid-template-columns: repeat(2, 3fr);
-  row-gap: 24px;
+  row-gap: 12px;
   margin-top: 30px;
   list-style: none;
   padding: 0;
@@ -85,5 +83,59 @@
 .info-content {
   font-size: var(--font-xl); /* 공통 변수 적용 */
   font-weight: 700;
-  color: var(--gray-color, #989898);
+  color: #7d7d7d;
+}
+
+/* --- 모집 내용 --- */
+.post-content-area {
+  margin: 8rem 0;
+}
+
+.post-info {
+  font-size: var(--font-xl);
+  font-weight: 700;
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #f2f2f2;
+}
+.post-content {
+  margin: 2rem;
+}
+
+.page-views {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+.image-eyes {
+  width: 20px;
+  height: 15px;
+  margin-right: 4px;
+}
+
+/* 임시로 footer를 하단에 고정하고, wrap이 전체 화면을 차지하게 하기 */
+body {
+  display: block !important; /* 공통 css의 flex 제거 */
+}
+
+.wrap {
+  display: flex !important;
+  flex-direction: column !important;
+  min-height: 100vh !important;
+  width: 100% !important;
+}
+
+main {
+  flex: 1 !important;
+}
+
+footer {
+  width: 100% !important;
+  margin-top: auto !important;
+  position: relative !important;
+}
+
+footer .row {
+  display: flex !important;
+  flex-wrap: wrap !important;
 }
