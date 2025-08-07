@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="../css/common.css" />
     <!-- main 스타일 -->
     <link rel="stylesheet" href="style.css" />
+    <!-- 공통 JS 연결 -->
+    <script src="../js/common.js"></script>
     <title>Document</title>
     <!-- bootstap-link -->
     <link
@@ -15,25 +17,27 @@
       integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
     <div class="wrap">
       <!-- nav 수정사항 layout 내 header 수정 후 복붙으로 수정 -->
+       <!-- head태그 안에 Font Awesome link 태그 넣기  -->
       <header>
-        <nav class="navbar bg-body-tertiary">
-          <div class="container-fluid">
-            <a class="navbar-brand">Navbar</a>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+        <nav class="navbar">
+          <div class="logo">
+            <a href="/index.html" class="nav_brand">COALMO</a>
+            <img src="/image/logo.jpg" />
+          </div>
+          <div class="nav_buttons">
+            <button onclick="location.href='/group/index.html'" class="button_register" type="submit">팀원 모집하기</button>
+            <button onclick="location.href='/mypage/index.html'" class="button_mypage" type="submit">마이페이지</button>
+            <a href="#" class="header_icon"><i class="fa-regular fa-bell"></i></a>
+            <a id="icon_menubar" href="#" class="header_icon_mb"><i class="fa-solid fa-bars"></i></a>
+          </div>
+          <div id="nav_mobile_menu" class="nav_mobile_menu">
+            <p>마이페이지</p>
+            <p>팀원 모집하기</p>
           </div>
         </nav>
       </header>
@@ -119,48 +123,32 @@
       </main>
 
       <!-- footer 수정사항 layout 내 footer 수정 후 복붙으로 수정 -->
-      <footer class="bg-dark text-white py-4 mt-auto">
+      <footer class="footer_container py-4 mt-auto">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 mb-3">
-              <h5>teamName</h5>
-              <p>
-                거주지<br />
-                서울특별시 강남구 테헤란로 123<br />
-                사업자등록번호: 123-45-67890
-              </p>
-            </div>
-            <div class="col-md-4 mb-3">
-              <h5>고객센터</h5>
-              <p>
-                Tel: 02-123-4567<br />
-                Email: help@seontech.co.kr<br />
-                운영시간: 평일 09:00~18:00
-              </p>
-            </div>
-            <div class="col-md-4 mb-3">
-              <h5>바로가기</h5>
-              <ul class="list-unstyled">
-                <li>
-                  <a href="#" class="text-white text-decoration-none"
-                    >회사소개</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white text-decoration-none"
-                    >이용약관</a
-                  >
-                </li>
-                <li>
-                  <a href="#" class="text-white text-decoration-none"
-                    >개인정보처리방침</a
-                  >
-                </li>
-              </ul>
-            </div>
+          <div class="row footer_first_row">
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#" class="text-decoration-none">문의하기</a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#" class="text-decoration-none">이용약관</a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#" class="text-decoration-none">개인정보처리방침</a>
+              </div>
+              <div class="col-lg-3 col-md-6 col-sm-12">
+                <a href="#" class="text-decoration-none">회사소개</a>
+              </div>
           </div>
-          <div class="text-center pt-3 border-top border-light mt-3">
-            © 2025 SeonTech Co., Ltd. All rights reserved.
+          <div class="footer_text">
+            <a href="/index.html" class="footer_nav_brand">COALMO</a>
+            <p class="footer_text">
+              코딩알려주는 누나<br />
+              HTML & CSS 스터디 4기 6조<br />
+              심현정 조상옥 백예인 김이진
+            </p>
+            <div class="text-center pt-3 border-top border-light mt-3">
+              © 2025 COALMO Co., Ltd. All rights reserved.
+            </div>
           </div>
         </div>
       </footer>
