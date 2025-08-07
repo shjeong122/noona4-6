@@ -1,14 +1,20 @@
+      <!-- nav 수정사항 layout 내 header 수정 후 복붙으로 수정 -->
+       <!-- head태그 안에 Font Awesome link 태그 넣기  -->
       <header>
         <nav class="navbar">
           <div class="logo">
-            <a class="nav_brand">COALMO</a>
-            <img src="./image/logo2.jpg" />
+            <a href="/index.html" class="nav_brand">COALMO</a>
+            <img src="/image/logo.jpg" />
           </div>
           <div class="nav_buttons">
-            <button class="button_register" type="submit">팀원 모집하기</button>
-            <button class="button_question" type="submit">비즈니스 문의</button>
-            <i class="fa-regular fa-bell"></i>
-            <i class="fa-solid fa-bars"></i>
+            <button onclick="location.href='/group/index.html'" class="button_register" type="submit">팀원 모집하기</button>
+            <button onclick="location.href='/mypage/index.html'" class="button_mypage" type="submit">마이페이지</button>
+            <a href="#" class="header_icon"><i class="fa-regular fa-bell"></i></a>
+            <a id="icon_menubar" href="#" class="header_icon_mb"><i class="fa-solid fa-bars"></i></a>
+          </div>
+          <div id="nav_mobile_menu" class="nav_mobile_menu">
+            <p>마이페이지</p>
+            <p>팀원 모집하기</p>
           </div>
         </nav>
       </header>
