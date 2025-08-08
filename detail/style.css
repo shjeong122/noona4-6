@@ -117,30 +117,3 @@
   height: 15px;
   margin-right: 4px;
 }
-
-/* 임시로 footer를 하단에 고정하고, wrap이 전체 화면을 차지하게 하기 */
-body {
-  display: block !important; /* 공통 css의 flex 제거 */
-}
-
-.wrap {
-  display: flex !important;
-  flex-direction: column !important;
-  min-height: 100vh !important;
-  width: 100% !important;
-}
-
-main {
-  flex: 1 !important;
-}
-
-footer {
-  width: 100% !important;
-  margin-top: auto !important;
-  position: relative !important;
-}
-
-footer .row {
-  display: flex !important;
-  flex-wrap: wrap !important;
-}
