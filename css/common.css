@@ -63,7 +63,7 @@ button {
 .nav_brand {
   font-weight: 700;
   color: #333;
-  font-size: 30px;
+  font-size: var(--font-2xl);
   cursor: pointer;
   text-decoration: none;
   justify-items: center;
@@ -76,19 +76,18 @@ button {
   margin-right: 10px;
 }
 .button_register {
-  color: #fff;
-  background-color: #5865f2;
-  font-size: 16px;
+  color: white;
+  background-color: var(--primary-color);
+  font-size: var(--font-lg);
   font-weight: 700;
   padding: 8px 22px;
   border-radius: 36px;
   height: 42px;
 }
 .button_mypage {
-  border: 1px solid #dddddd;
-  background-color: #999;
+  background-color: var(--gray-color);
   color: white;
-  font-size: 16px;
+  font-size: var(--font-lg);
   font-weight: 700;
   padding: 8px 22px;
   border-radius: 36px;
@@ -97,57 +96,69 @@ button {
   justify-content: center;
   align-items: center;
 }
-.nav_buttons > i {
-  font-size: 20px;
-  cursor: pointer;
-}
-
 .header_icon {
   text-decoration: none;
   color: #333;
-  font-size: 26px;
+  font-size: var(--font-2xl);
   margin-left: 15px;
 }
 .header_icon_mb {
   display: none;
   text-decoration: none;
   color: #333;
-  font-size: 26px;
+  font-size: var(--font-2xl);
   margin-left: 15px;
 }
+/* PC 기본: 안 보이게 */
 .nav_mobile_menu {
   display: none;
+  width: 100%;
+  background-color: grey;
+  color: white;
+}
+
+/* 메뉴가 열렸을 때 */
+.nav_mobile_menu.is-open {
+  display: block;
+}
+
+.nav_mobile_menu .nav_mobile_menu_link {
+  display: block;
+  text-decoration: none;
+  font-size: var(--font-lg);
+  color: white;
+  text-align: center;
+  padding: 10px;
+  border-bottom: 1px solid rgba(255,255,255,0.2);
 }
 
 /* Footer */
 .footer_container {
-  background-color: #5865f2;
+  background-color: var(--primary-color);
   color: white;
   width: 100%;
   max-width: 2000px;
+  border-radius: 30px;
+  border-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
+
 .footer_first_row a {
   color: white;
 }
 .footer_first_row {
   text-align: center;
-  margin-top: 30px;
   margin-bottom: 30px;
 }
 .footer_text {
   text-align: center;
-  font-size: 14px;
+  font-size: var(--font-md);
   margin-top: 10px;
-}
-footer {
-  border-radius: 30px;
-  border-color: #5865f2;
-  background-color: #5865f2;
 }
 .footer_nav_brand {
   font-weight: 700;
   color: white;
-  font-size: 30px;
+  font-size: var(--font-2xl);
   cursor: pointer;
   text-decoration: none;
   justify-items: center;
@@ -170,16 +181,31 @@ footer {
   footer {
     border-radius: 0px;
   }
-  .nav_mobile_menu {
+  /* .nav_mobile_menu {
     display: none;
     width: 100%;
     background-color: grey;
     color: white;
   }
+  .nav_mobile_menu_link {
+    display: none;
+  }
   .nav_mobile_menu > p {
+    text-decoration: none;
     width: 100%;
     text-align: center;
-    margin: 10px 0;
     border-bottom: white;
   }
+  .nav_mobile_menu > a {
+    text-decoration: none;
+    font-size: var(--font-lg);
+    color: white;
+    text-align: center;
+    margin-top: 10px;
+    border-bottom: white;
+  } */
+}
+
+@media (min-width: 1276px) {
+  .nav_mobile_menu { display: none !important; } /* PC에서 항상 숨김 */
 }
