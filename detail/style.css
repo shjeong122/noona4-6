@@ -9,7 +9,8 @@
 .main-section {
   display: flex;
   flex-direction: column;
-  max-width: 900px;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin: 5rem auto 0;
   padding: 1.5rem 1.5rem 5rem;
@@ -25,7 +26,7 @@
 .main-title {
   display: block;
   margin-top: 2.5rem;
-  font-size: 36px; /* 필요하면 var(--font-2xl)로 교체 가능 */
+  font-size: 2.25rem; /* 필요하면 var(--font-2xl)로 교체 가능 */
   font-weight: 800;
   line-height: 1.265;
   letter-spacing: -0.005em;
@@ -35,7 +36,7 @@
 /* === 화면 폭 768px 이하일 때 글자 크기 축소 === */
 @media (max-width: 768px) {
   .main-title {
-    font-size: 24px;
+    font-size: 1.5rem;
     margin-top: 1rem;
   }
 }
@@ -44,11 +45,12 @@
 .user-info {
   display: flex;
   align-items: center;
-  gap: 15px;
-  margin-top: 2rem;
-  padding-bottom: 1.5rem;
-  border-bottom: 2px solid #f2f2f2;
+  gap: 1rem;
+  margin: 0;
+  padding: 1rem 0;
   list-style: none;
+  padding-left: 0;
+  border-bottom: 2px solid #f2f2f2;
 }
 
 /* === 모집 정보 === */
@@ -58,32 +60,35 @@
 }
 
 .info-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 3fr);
   row-gap: 12px;
-  margin-top: 30px;
+  margin-top: 30px 0;
   list-style: none;
-  padding: 0;
 }
 
 .list {
   display: flex;
+  align-items: center;
   gap: 12px;
-  padding: 0;
   margin: 0;
 }
 
 /* --- 모집 정보 텍스트 --- */
 .info-title {
-  font-size: var(--font-xl); /* 공통 변수 적용 */
+  font-size: 1rem;
   font-weight: 700;
   color: var(--color-text, #000);
 }
 
 .info-content {
-  font-size: var(--font-xl); /* 공통 변수 적용 */
+  font-size: 1rem;
   font-weight: 700;
   color: #7d7d7d;
+}
+.info-content img {
+  height: 24px;
+  width: auto;
+  vertical-align: top;
+  margin: 4px;
 }
 
 /* --- 모집 내용 --- */
@@ -92,7 +97,7 @@
 }
 
 .post-info {
-  font-size: var(--font-xl);
+  font-size: 1rem;
   font-weight: 700;
   margin-bottom: 1rem;
   padding-bottom: 1rem;
@@ -111,31 +116,4 @@
   width: 20px;
   height: 15px;
   margin-right: 4px;
-}
-
-/* 임시로 footer를 하단에 고정하고, wrap이 전체 화면을 차지하게 하기 */
-body {
-  display: block !important; /* 공통 css의 flex 제거 */
-}
-
-.wrap {
-  display: flex !important;
-  flex-direction: column !important;
-  min-height: 100vh !important;
-  width: 100% !important;
-}
-
-main {
-  flex: 1 !important;
-}
-
-footer {
-  width: 100% !important;
-  margin-top: auto !important;
-  position: relative !important;
-}
-
-footer .row {
-  display: flex !important;
-  flex-wrap: wrap !important;
 }
