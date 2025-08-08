@@ -11,14 +11,16 @@ a {
 }
 /* 이번주 인기글 area */
 .popular {
-  cursor: pointer;
   flex-direction: column;
+  margin: 50px 0px;
+  font-size: var(--font-2xl);
 }
 /* 이번주 인기글_title */
 .popular_title {
   display: flex;
+  align-items: center;
   justify-content: center;
-  margin: 25px 0px;
+  margin: 40px 0px;
   gap: 40px;
 }
 .popular_title > h2 {
@@ -26,7 +28,9 @@ a {
   font-size: var(--font-2xl);
   font-style: normal;
   font-weight: 700;
-  line-height: 100%;
+  text-decoration: underline;
+  text-underline-offset: 12px;
+  cursor: pointer;
 }
 
 /* card area */
@@ -44,41 +48,40 @@ a {
   border-radius: 50px;
   border: 2px solid var(--primary-color);
   background: #fff;
+  cursor: pointer;
 }
 .box_button {
   display: flex;
   justify-content: space-between;
 }
 .box_alert {
+  border-radius: 20px;
   padding: 2px 8px;
   height: 20px;
   color: #ea726f;
-  font-size: 10px;
-  letter-spacing: -0.04em;
-  border-radius: 20px;
   border: 1px solid #ea726f;
   font-weight: 600;
-  line-height: normal;
+  font-size: var(--font-sm);
+  align-content: center;
 }
 .box_category {
   border-radius: 20px;
-  padding: 4px 8px;
+  padding: 2px 8px;
   height: 20px;
   background: #efefef;
   color: #656565;
-  font-weight: 900;
-  font-size: 12px;
+  /* border: 1px solid #656565; */
+  font-weight: 600;
+  font-size: var(--font-sm);
   align-content: center;
-  line-height: normal;
-  letter-spacing: -0.04em;
 }
 .box_contents {
   height: 40px;
   margin: 0;
   color: #000;
-  font-size: 15px;
+  font-size: var(--font-md);
   font-weight: 600;
-  letter-spacing: -0.7px;
+  letter-spacing: -0.05rem;
   margin-top: 10px;
 }
 .d_day {
@@ -89,33 +92,30 @@ a {
 }
 .box_count {
   color: #4e4e4e;
-  font-size: 10px;
+  font-size: var(--font-sm);
   font-weight: 500;
-  letter-spacing: -0.4px;
   text-align: end;
 }
 
 /* main_nav area */
-.main_nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 0px 20px;
-  margin: 0 auto;
-}
 .main_contents {
-  margin: 25px 0px;
+  margin: 20px 0px 50px;
   display: flex;
   align-items: center;
   flex-direction: column;
   font-weight: 700;
   font-size: var(--font-2xl);
-  cursor: pointer;
 }
-.nav-link {
-  padding-left: 20px;
+.main_nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 0px;
+}
+.main_list {
   color: black;
   font-weight: 700;
-  font-size: 24px;
+  font-size: var(--font-2xl);
   cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 12px;
 }
