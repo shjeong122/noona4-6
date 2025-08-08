@@ -1,13 +1,23 @@
-/* 
-1. **박스 모델**: `display`, `width`, `height`, `margin`, `padding`
-2. **텍스트**: `font-size`, `line-height`, `color`, `text-align`
-3. **스타일**: `background`, `border`, `box-shadow`, `transition`
-4. **기타**: `cursor`, `z-index`, `position` 등
-*/
+@font-face {
+  font-family: "BMJUA";
+  src: url("../fonts/BMJUA_ttf.ttf") format("truetype");
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Pretendard";
+  src: url("https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-style: normal;
+}
 
 :root {
   /* Layout */
   --max-width: 1276px;
+
+  /* Font Sizes */
+  --main-font: "Pretendard";
+  --logo-font: "BMJUA";
 
   /* Font Sizes */
   --font-2xl: 1.625rem; /* 가장 큰 텍스트 (배너, 강조 문구 등) */
@@ -21,14 +31,6 @@
   --gray-color: #999;
 }
 
-@font-face {
-  font-family: "BMJUA";
-  src: url("../fonts/BMJUA_ttf.ttf") format("truetype");
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-
 *,
 body,
 html {
@@ -39,7 +41,7 @@ html {
 body {
   display: flex;
   justify-content: center;
-  font-family: "BMJUA", sans-serif;
+  font: var(--main-font);
 }
 .wrap {
   width: var(--max-width) !important;
