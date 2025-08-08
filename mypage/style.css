@@ -5,6 +5,246 @@
 4. **기타**: `cursor`, `z-index`, `position` 등
 */
 
-.main_contean{
+.main_conteiner{
     border: 1px solid red;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 100px 50px;
+}
+
+/* 카드 공통 */
+.card, .profile-card {
+  background: #fff;
+  border: 1px solid var(--primary-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+
+/* 섹션 타이틀 */
+.section-title {
+  font-size: var(--font-xl);
+  margin: 0 0 12px;
+}
+
+.sub-title {
+  font-size: var(--font-lg);
+  margin: 16px 0 8px;
+}
+
+/* 프로필 영역 */
+.profile-card {
+  display: grid;
+  gap: 16px;
+}
+
+.avatar-wrap {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid #f0f0f0;
+}
+
+.avatar-btn {
+  display: inline-block;
+  font-size: var(--font-md);
+  color: #fff;
+  background: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.profile-basic .field {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.profile-basic label {
+  font-size: var(--font-md);
+}
+
+.profile-basic input,
+textarea,
+.link-row input,
+.skill-name,
+.career-period,
+.career-title,
+.career-desc {
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+  outline: none;
+}
+
+.profile-basic input:focus,
+textarea:focus,
+.link-row input:focus,
+.skill-name:focus,
+.career-period:focus,
+.career-title:focus,
+.career-desc:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.12);
+}
+
+/* 그리드 헬퍼 */
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* 칩(관심분야) */
+.help {
+  color: var(--gray-color);
+  font-size: var(--font-md);
+  margin: 0 0 8px;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip-list input[type="checkbox"] {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+}
+
+/* 기본 칩 모양 */
+.chip {
+  padding: 8px 12px;
+  border: 1px solid #e5e5e5;
+  border-radius: 999px;
+  font-size: var(--font-md);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px 8px 0;
+}
+
+/* 체크되었을 때의 label 스타일 */
+input[type="checkbox"]:checked + .chip {
+  background: rgba(88,101,242,0.08);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.chip.active {
+  background: rgba(88, 101, 242, 0.08);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* 스킬 */
+.skill-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.skill-name {
+  width: 100%;
+}
+
+.skill-level label {
+  margin-right: 8px;
+  font-size: var(--font-md);
+}
+
+.btn {
+  font-size: var(--font-md);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e5e5;
+  background: #fff;
+  cursor: pointer;
+}
+
+.btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.btn.ghost {
+  background: #fff;
+}
+
+.stack > * + * {
+  margin-top: 8px;
+}
+
+/* 경력 */
+.career-item {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px dashed #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.career-desc {
+  resize: vertical;
+}
+
+/* 포트폴리오 파일 리스트 */
+.file-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 6px;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-md);
+}
+
+.file-list a {
+  text-decoration: underline;
+  word-break: break-all;
+}
+
+/* 자기소개 */
+#aboutMe {
+  width: 100%;
+  resize: vertical;
+}
+
+/* 저장 영역 */
+.actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+.save-tip {
+  color: var(--gray-color);
+  font-size: var(--font-md);
 }

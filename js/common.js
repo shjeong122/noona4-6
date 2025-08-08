@@ -5,11 +5,7 @@ document.addEventListener('DOMContentLoaded', function () {
   if (menuButton && mobileMenu) {
     menuButton.addEventListener('click', function (e) {
       e.preventDefault();
-      if (mobileMenu.style.display === 'none' || mobileMenu.style.display === '') {
-        mobileMenu.style.display = 'block';
-      } else {
-        mobileMenu.style.display = 'none';
-      }
+      mobileMenu.classList.toggle('is-open');
     });
   }
 });
