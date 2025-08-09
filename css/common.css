@@ -50,11 +50,6 @@ body {
   width: var(--max-width) !important;
 }
 
-.main_container {
-  /* 임시 개발환경에서 범위 체크용 */
-  background-color: white;
-}
-
 /* navbar area */
 nav {
   display: flex;
@@ -63,7 +58,6 @@ nav {
   padding: 0px 20px;
   margin: 0 10px;
 }
-
 
 button {
   border: none;
@@ -125,7 +119,6 @@ button {
   color: #333;
   font-size: var(--font-2xl);
 }
-/* PC 기본: 안 보이게 */
 .nav_mobile_menu {
   display: none;
   width: 100%;
@@ -133,7 +126,6 @@ button {
   color: white;
 }
 
-/* 메뉴가 열렸을 때 */
 .nav_mobile_menu.is-open {
   display: block;
 }
@@ -154,7 +146,8 @@ button {
   color: white;
   width: 100%;
   max-width: 2000px;
-  border-radius: 30px;
+  border-top-left-radius: 30px;
+  border-top-right-radius: 30px;
   border-color: var(--primary-color);
   background-color: var(--primary-color);
 }
@@ -198,33 +191,14 @@ button {
   footer {
     border-radius: 0px;
   }
-  /* .nav_mobile_menu {
-    display: none;
-    width: 100%;
-    background-color: grey;
-    color: white;
+  .footer_container {
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
   }
-  .nav_mobile_menu_link {
-    display: none;
-  }
-  .nav_mobile_menu > p {
-    text-decoration: none;
-    width: 100%;
-    text-align: center;
-    border-bottom: white;
-  }
-  .nav_mobile_menu > a {
-    text-decoration: none;
-    font-size: var(--font-lg);
-    color: white;
-    text-align: center;
-    margin-top: 10px;
-    border-bottom: white;
-  } */
 }
 
 @media (min-width: 1276px) {
   .nav_mobile_menu {
     display: none !important;
-  } /* PC에서 항상 숨김 */
+  }
 }
