@@ -34,10 +34,13 @@ padding-top: 50px;
   display: flex;
   justify-content: center;
   font-size: var(--font-xl);
-  gap: 20px;
+  gap: 30px;
   /* margin: 20px 0px 20px; */
 }
-
+i {
+ background-color: white;
+ padding: 10px 0px 5px;
+}
 /* card area */
 .contents {
   display: flex;
