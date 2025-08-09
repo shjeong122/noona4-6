@@ -30,24 +30,14 @@
       <!-- head태그 안에 Font Awesome link 태그 넣기  -->
       <header>
         <nav class="navbar">
-          <div class="logo">
+          <section class="logo">
             <a href="./index.html" class="nav_brand">COALMO</a>
             <img src="./image/logo.jpg" />
-          </div>
+          </section>
           <div class="nav_buttons">
-            <button
-              onclick="location.href='./group/index.html'"
-              class="button_register"
-              type="submit"
-            >
-              팀원 모집하기
+            <button onclick="location.href='./group/index.html'" class="button_register" type="submit">팀원 모집하기
             </button>
-            <button
-              onclick="location.href='./mypage/index.html'"
-              class="button_mypage"
-              type="submit"
-            >
-              마이페이지
+            <button onclick="location.href='./mypage/index.html'" class="button_mypage" type="submit">마이페이지
             </button>
             <a href="#" class="header_icon"
               ><i class="fa-regular fa-bell"></i
@@ -65,270 +55,523 @@
 
       <!-- main 내용 작성 -->
       <main class="main_contain">
-        <!-- 이번주 인기글 -->
-        <div class="popular">
-          <div class="popular_title">
-            <div></div>
-            <h2>이번주 인기글</h2>
-            <div class="popular_title_icon">
-              <i class="fa-solid fa-circle-chevron-left"></i>
-              <i class="fa-solid fa-circle-chevron-right"></i>
-            </div>
-          </div>
-          <div class="container contents">
-            <div class="row cards">
-              <div
-                class="card col-lg-3 col-md-6 col-sm-12"
-                style="width: 18rem"
-              >
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="card col-lg-3 col-md-6 col-sm-12"
-                style="width: 18rem"
-              >
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="card col-lg-3 col-md-6 col-sm-12"
-                style="width: 18rem"
-              >
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div
-                class="card col-lg-3 col-md-6 col-sm-12"
-                style="width: 18rem"
-              >
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="main_contents">
-          <div class="main_nav">
-            <ul class="nav">
-              <li class="nav-item">
-                <a class="nav-link active main_list" aria-current="page" href="#">전체</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link main_list" href="#">프로젝트</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link main_list" href="#">스터디</a>
-              </li>
-            </ul>
-          </div>
-          <div class="container contents">
-            <div class="row cards">
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="card col-lg-3 col-sm-12" style="width: 18rem">
-                <div class="card-body">
-                  <a href="./detail/index.html">
-                    <div>
-                      <div class="box_button">
-                        <p class="box_category">🗂 프로젝트</p>
-                        <p class="box_alert">🚨 마감 11일전</p>
-                      </div>
-                      <p class="d_day">마감일|2025.08.16</p>
-                      <h2 class="box_contents">
-                        🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는 플랫폼"
-                        Freemo를 함께 만들 개발자를 찾습니다
-                      </h2>
-                      <p class="box_count">👀 조회수 3548회</p>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </main>
 
+        <!-- 이번주 인기글 -->
+        <div class="block">
+          <div class="title">
+            <h2>이번주 인기글</h2>
+          </div>
+          <div id="carouselExample" class="carousel slide">
+            <section class="category">
+              <button>
+                <span type="button" data-bs-target="#carouselExample" data-bs-slide="prev">왼쪽</span>
+              </button>
+              <button>
+                <span type="button" data-bs-target="#carouselExample" data-bs-slide="next">오른쪽</span>
+              </button>
+            </section>
+            <!-- 인기글_프로젝트 -->
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <div class="container contents">
+                  <section class="nav_title">
+                    <h2>프로젝트</h2>
+                  </section>
+                  <div class="row cards">
+                    <div
+                      class="card col-lg-3 col-md-6 col-sm-12"
+                      style="width: 18rem"
+                    >
+                      <div class="card-body">
+                        <a href="./detail/index.html">
+                          <div>
+                            <div class="box_button">
+                              <p class="box_category">🗂 프로젝트</p>
+                              <p class="box_alert">🚨 마감 11일전</p>
+                            </div>
+                            <p class="d_day">마감일|2025.08.16</p>
+                            <h2 class="box_contents">
+                              🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                              플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                            </h2>
+                            <p class="box_count">👀 조회수 3548회</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="card col-lg-3 col-md-6 col-sm-12"
+                      style="width: 18rem"
+                    >
+                      <div class="card-body">
+                        <a href="./detail/index.html">
+                          <div>
+                            <div class="box_button">
+                              <p class="box_category">🗂 프로젝트</p>
+                              <p class="box_alert">🚨 마감 11일전</p>
+                            </div>
+                            <p class="d_day">마감일|2025.08.16</p>
+                            <h2 class="box_contents">
+                              🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                              플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                            </h2>
+                            <p class="box_count">👀 조회수 3548회</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="card col-lg-3 col-md-6 col-sm-12"
+                      style="width: 18rem"
+                    >
+                      <div class="card-body">
+                        <a href="./detail/index.html">
+                          <div>
+                            <div class="box_button">
+                              <p class="box_category">🗂 프로젝트</p>
+                              <p class="box_alert">🚨 마감 11일전</p>
+                            </div>
+                            <p class="d_day">마감일|2025.08.16</p>
+                            <h2 class="box_contents">
+                              🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                              플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                            </h2>
+                            <p class="box_count">👀 조회수 3548회</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- 인기글_스터디 -->
+              <div class="carousel-item">
+                <div class="container contents">
+                  <section class="nav_title">
+                    <h2>스터디</h2>
+                  </section>
+                  <div class="row cards">
+                    <div
+                      class="card col-lg-3 col-md-6 col-sm-12"
+                      style="width: 18rem"
+                    >
+                      <div class="card-body">
+                        <a href="./detail/index.html">
+                          <div>
+                            <div class="box_button">
+                              <p class="box_category">🗂 프로젝트</p>
+                              <p class="box_alert">🚨 마감 11일전</p>
+                            </div>
+                            <p class="d_day">마감일|2025.08.16</p>
+                            <h2 class="box_contents">
+                              🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                              플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                            </h2>
+                            <p class="box_count">👀 조회수 3548회</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="card col-lg-3 col-md-6 col-sm-12"
+                      style="width: 18rem"
+                    >
+                      <div class="card-body">
+                        <a href="./detail/index.html">
+                          <div>
+                            <div class="box_button">
+                              <p class="box_category">🗂 프로젝트</p>
+                              <p class="box_alert">🚨 마감 11일전</p>
+                            </div>
+                            <p class="d_day">마감일|2025.08.16</p>
+                            <h2 class="box_contents">
+                              🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                              플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                            </h2>
+                            <p class="box_count">👀 조회수 3548회</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                    <div
+                      class="card col-lg-3 col-md-6 col-sm-12"
+                      style="width: 18rem"
+                    >
+                      <div class="card-body">
+                        <a href="./detail/index.html">
+                          <div>
+                            <div class="box_button">
+                              <p class="box_category">🗂 프로젝트</p>
+                              <p class="box_alert">🚨 마감 11일전</p>
+                            </div>
+                            <p class="d_day">마감일|2025.08.16</p>
+                            <h2 class="box_contents">
+                              🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                              플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                            </h2>
+                            <p class="box_count">👀 조회수 3548회</p>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 전체 모임 공고 -->
+          <div class="block">
+            <div class="title">
+              <h2>전체 모임 공고</h2>
+            </div>
+            <div id="carouselExampleIndicators" class="carousel slide">
+              <section class="category">
+                <button>
+                  <span  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">왼쪽</span>
+                </button>
+                <button>
+                  <span  type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">오른쪽</span>
+                </button>
+              </section>
+              <!-- 프로젝트 -->
+              <div class="carousel-inner">
+                <div class="carousel-item active">
+                  <div class="container contents">
+                    <section class="nav_title">
+                      <h2>프로젝트</h2>
+                    </section>
+                    <div class="row cards">
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- 스터디 -->
+                <div class="carousel-item">
+                  <div class="container contents">
+                    <section class="nav_title">
+                      <h2>스터디</h2>
+                    </section>
+                    <div class="row cards">
+                      <div class="card col-lg-3 col-md-6 col-sm-12" style="width: 18rem">
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                      <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                                            <div
+                        class="card col-lg-3 col-md-6 col-sm-12"
+                        style="width: 18rem"
+                      >
+                        <div class="card-body">
+                          <a href="./detail/index.html">
+                            <div>
+                              <div class="box_button">
+                                <p class="box_category">🗂 프로젝트</p>
+                                <p class="box_alert">🚨 마감 11일전</p>
+                              </div>
+                              <p class="d_day">마감일|2025.08.16</p>
+                              <h2 class="box_contents">
+                                🚀 "퇴근 후에도, 퇴사 후에도 일감이 끊이지 않는
+                                플랫폼" Freemo를 함께 만들 개발자를 찾습니다
+                              </h2>
+                              <p class="box_count">👀 조회수 3548회</p>
+                            </div>
+                          </a>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+      </main>
 
       <!-- footer 수정사항 layout 내 footer 수정 후 복붙으로 수정 -->
       <footer class="footer_container py-4 mt-auto">
