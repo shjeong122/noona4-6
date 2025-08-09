@@ -61,8 +61,10 @@ nav {
   justify-content: space-between;
   align-items: center;
   padding: 0px 20px;
-  margin: 0 auto;
+  margin: 0 10px;
 }
+
+
 button {
   border: none;
 }
@@ -70,11 +72,12 @@ button {
   display: flex;
   align-items: center;
 }
-.logo > img {
+.logo_img > img {
   width: 80px;
   height: auto;
 }
 .nav_brand {
+  font-family: var(--logo-font);
   font-weight: 700;
   color: #333;
   font-size: var(--font-2xl);
@@ -114,14 +117,13 @@ button {
   text-decoration: none;
   color: #333;
   font-size: var(--font-2xl);
-  margin-left: 15px;
+  margin: 0 10px;
 }
 .header_icon_mb {
   display: none;
   text-decoration: none;
   color: #333;
   font-size: var(--font-2xl);
-  margin-left: 15px;
 }
 /* PC 기본: 안 보이게 */
 .nav_mobile_menu {
@@ -164,12 +166,13 @@ button {
   text-align: center;
   margin-bottom: 30px;
 }
-.footer_text {
+.footer_text, .footer_main {
   text-align: center;
   font-size: var(--font-md);
   margin-top: 10px;
 }
 .footer_nav_brand {
+  font-family: var(--logo-font);
   font-weight: 700;
   color: white;
   font-size: var(--font-2xl);
