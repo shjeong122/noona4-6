@@ -20,46 +20,28 @@
   </head>
   <body>
     <div class="wrap">
+         <!-- nav 수정사항 layout 내 header 수정 후 복붙으로 수정 -->
+       <!-- head태그 안에 Font Awesome link 태그 넣기  -->
       <header>
         <nav class="navbar">
           <div class="logo">
             <a href="../index.html" class="nav_brand">COALMO</a>
-            <a href="../index.html" class="logo"
-              ><img src="/image/logo.jpg"
-            /></a>
+            <a href="../index.html" class="logo_img"><img src="../image/logo.jpg" /></a>
           </div>
           <div class="nav_buttons">
-            <button
-              onclick="location.href='../group/index.html'"
-              class="button_register"
-              type="submit"
-            >
-              팀원 모집하기
-            </button>
-            <button
-              onclick="location.href='../mypage/index.html'"
-              class="button_mypage"
-              type="submit"
-            >
-              마이페이지
-            </button>
-            <a href="#" class="header_icon"
-              ><i class="fa-regular fa-bell header_icon"></i
-            ></a>
-            <a id="icon_menubar" href="#" class="header_icon_mb"
-              ><i class="fa-solid fa-bars"></i
-            ></a>
-          </div>
-          <div id="nav_mobile_menu" class="nav_mobile_menu">
-            <a href="../mypage/index.html" class="nav_mobile_menu_link"
-              ><p>마이페이지</p></a
-            >
-            <a href="../group/index.html" class="nav_mobile_menu_link"
-              ><p>팀원 모집하기</p></a
-            >
+            <button onclick="location.href='../group/index.html'" class="button_register" type="submit">팀원 모집하기</button>
+            <button onclick="location.href='../mypage/index.html'" class="button_mypage" type="submit">마이페이지</button>
+            <a href="#" class="header_icon"><i class="fa-regular fa-bell header_icon"></i></a>
+            <a id="icon_menubar" href="#" class="header_icon_mb"><i class="fa-solid fa-bars"></i></a>
           </div>
         </nav>
+        <div id="nav_mobile_menu" class="nav_mobile_menu">
+          <a href="../mypage/index.html" class="nav_mobile_menu_link">마이페이지</a>
+          <a href="../group/index.html" class="nav_mobile_menu_link">팀원 모집하기</a>
+        </div>
       </header>
+
+
 
       <main class="main_container d-flex justify-content-center my-5">
         <div class="card rounded-4 p-4 login-card bg-white">
@@ -149,35 +131,36 @@
         </div>
       </main>
 
-      <footer class="footer_container py-4 mt-auto">
-        <div class="container">
-          <div class="row footer_first_row">
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <a href="#" class="text-decoration-none">문의하기</a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <a href="#" class="text-decoration-none">이용약관</a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <a href="#" class="text-decoration-none">개인정보처리방침</a>
-            </div>
-            <div class="col-lg-3 col-md-6 col-sm-12">
-              <a href="#" class="text-decoration-none">회사소개</a>
-            </div>
-          </div>
-          <div class="footer_text">
-            <a href="../index.html" class="footer_nav_brand">COALMO</a>
-            <p class="footer_text">
-              코딩알려주는 누나<br />
-              HTML & CSS 스터디 4기 6조<br />
-              심현정 조상옥 백예인 김이진
-            </p>
-            <div class="text-center pt-3 border-top border-light mt-3">
-              © 2025 COALMO Co., Ltd. All rights reserved.
-            </div>
-          </div>
+ <!-- footer 수정사항 layout 내 footer 수정 후 복붙으로 수정 -->
+<footer class="footer_container py-4 mt-auto">
+  <div class="container">
+    <div class="row footer_first_row">
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a href="#" class="text-decoration-none">문의하기</a>
         </div>
-      </footer>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a href="#" class="text-decoration-none">이용약관</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a href="#" class="text-decoration-none">개인정보처리방침</a>
+        </div>
+        <div class="col-lg-3 col-md-6 col-sm-12">
+          <a href="#" class="text-decoration-none">회사소개</a>
+        </div>
+    </div>
+    <div class="footer_main">
+      <a href="../index.html" class="footer_nav_brand">COALMO</a>
+      <p class="footer_text">
+        코딩알려주는 누나<br />
+        HTML & CSS 스터디 4기 6조<br />
+        심현정 조상옥 백예인 김이진
+      </p>
+      <div class="text-center pt-3 border-top border-light mt-3">
+        © 2025 COALMO Co., Ltd. All rights reserved.
+      </div>
+    </div>
+  </div>
+</footer>
     </div>
 
     <!-- bootstap-script -->
