@@ -28,36 +28,42 @@
       <header>
         <nav class="navbar">
           <div class="logo">
-            <a href="/index.html" class="nav_brand">COALMO</a>
-            <img src="/image/logo.jpg" />
+            <a href="../index.html" class="nav_brand">COALMO</a>
+            <a href="../index.html" class="logo_img"
+              ><img src="../image/logo.jpg"
+            /></a>
           </div>
           <div class="nav_buttons">
             <button
-              onclick="location.href='/group/index.html'"
+              onclick="location.href='../group/index.html'"
               class="button_register"
               type="submit"
             >
               팀원 모집하기
             </button>
             <button
-              onclick="location.href='/mypage/index.html'"
+              onclick="location.href='../mypage/index.html'"
               class="button_mypage"
               type="submit"
             >
               마이페이지
             </button>
             <a href="#" class="header_icon"
-              ><i class="fa-regular fa-bell"></i
+              ><i class="fa-regular fa-bell header_icon"></i
             ></a>
             <a id="icon_menubar" href="#" class="header_icon_mb"
               ><i class="fa-solid fa-bars"></i
             ></a>
           </div>
-          <div id="nav_mobile_menu" class="nav_mobile_menu">
-            <p>마이페이지</p>
-            <p>팀원 모집하기</p>
-          </div>
         </nav>
+        <div id="nav_mobile_menu" class="nav_mobile_menu">
+          <a href="../mypage/index.html" class="nav_mobile_menu_link"
+            >마이페이지</a
+          >
+          <a href="../group/index.html" class="nav_mobile_menu_link"
+            >팀원 모집하기</a
+          >
+        </div>
       </header>
 
       <!-- main 내용 작성 -->
