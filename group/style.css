@@ -1,6 +1,56 @@
-/* 
-1. **박스 모델**: `display`, `width`, `height`, `margin`, `padding`
-2. **텍스트**: `font-size`, `line-height`, `color`, `text-align`
-3. **스타일**: `background`, `border`, `box-shadow`, `transition`
-4. **기타**: `cursor`, `z-index`, `position` 등
-*/
+.group_title {
+  display: flex;
+  align-items: center;
+  border-bottom: 3px solid var(--gray-disabled);
+  padding-bottom: 10px;
+}
+
+.group_title :first-child {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  color: white;
+  margin: 0 10px;
+}
+.group_title h4 {
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.input_title {
+  margin-bottom: 10px;
+}
+
+.input_title {
+  font-size: var(--font-xl);
+}
+.form-control:focus,
+.form-select:focus {
+  box-shadow: 0 0 10px var(--primary-color);
+}
+.btn-toolbar {
+  background-color: var(--gray-disabled);
+  border: 2px solid var(--gray-disabled);
+  border-bottom: none;
+  border-radius: 10px 10px 0 0;
+}
+.textarea_box {
+  height: 200px;
+  border: 2px solid var(--gray-disabled);
+  border-top: none;
+  border-radius: 0 0 10px 10px;
+}
+.btn_box button {
+  background-color: var(--primary-color);
+}
+
+.btn_box button:hover {
+  background-color: var(--primary-hover);
+}
