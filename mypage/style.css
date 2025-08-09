@@ -6,16 +6,22 @@
 */
 
 .main_conteiner{
-    border: 1px solid red;
     max-width: var(--max-width);
     margin: 0 auto;
     padding: 24px 100px 50px;
 }
+@media (max-width: 720px) {
+  .main_conteiner{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 30px 50px;
+  }
+}
 
 /* 카드 공통 */
 .card, .profile-card {
-  background: #fff;
-  border: 1px solid var(--primary-color);
+  background: white;
+  border: 2px solid var(--border-color);
   border-radius: 12px;
   padding: 20px;
   margin-bottom: 20px;
@@ -50,7 +56,7 @@
   height: 160px;
   border-radius: 50%;
   object-fit: cover;
-  border: 2px solid #f0f0f0;
+  border: 2px solid var(--border-color);
 }
 
 .avatar-btn {
@@ -79,10 +85,11 @@ textarea,
 .skill-name,
 .career-period,
 .career-title,
-.career-desc {
+.career-desc,
+.form-select {
   font-size: var(--font-lg);
   padding: 10px 12px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--gray-color);
   border-radius: 8px;
   outline: none;
 }
@@ -112,8 +119,23 @@ textarea:focus,
   }
 }
 
+.input-with-unit {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-unit .form-control {
+  width: 200px;
+  margin-right: 8px;
+}
+
+.input-with-unit .unit {
+  font-size: var(--font-lg);
+  color: #333;
+}
+
 /* 칩(관심분야) */
-.help {
+.chip {
   color: var(--gray-color);
   font-size: var(--font-md);
   margin: 0 0 8px;
@@ -125,16 +147,16 @@ textarea:focus,
   gap: 8px;
 }
 
-.chip-list input[type="checkbox"] {
+/* .chip-list input[type="checkbox"] {
   position: absolute;
   opacity: 0;
   pointer-events: none;
-}
+} */
 
 /* 기본 칩 모양 */
 .chip {
   padding: 8px 12px;
-  border: 1px solid #e5e5e5;
+  border: 1px solid var(--gray-color);
   border-radius: 999px;
   font-size: var(--font-md);
   cursor: pointer;
@@ -149,19 +171,39 @@ input[type="checkbox"]:checked + .chip {
   color: var(--primary-color);
 }
 
-.chip.active {
-  background: rgba(88, 101, 242, 0.08);
-  border-color: var(--primary-color);
-  color: var(--primary-color);
-}
-
 /* 스킬 */
 .skill-row {
   display: grid;
-  grid-template-columns: 1fr auto auto;
+  grid-template-columns: 1fr auto auto auto auto;
   gap: 8px;
   align-items: center;
   margin-bottom: 8px;
+}
+
+@media (max-width: 720px) {
+  /* 스킬부분을 1행->3행으로 나누기 */
+  .skill-row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "name name name"
+      "high mid low"
+      "btn btn btn";
+  }
+
+  /* 자식 순서에 맞춰 영역 배치 */
+  .skill-row > :nth-child(1) { grid-area: name; }
+  .skill-row > :nth-child(2) { grid-area: high; }
+  .skill-row > :nth-child(3) { grid-area: mid; }
+  .skill-row > :nth-child(4) { grid-area: low; }
+  .skill-row > :nth-child(5) { grid-area: btn; }
+
+  /* .form-check를 가운데 정렬 */
+  .skill-row .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
 }
 
 .skill-name {
@@ -177,9 +219,12 @@ input[type="checkbox"]:checked + .chip {
   font-size: var(--font-md);
   padding: 8px 12px;
   border-radius: 8px;
-  border: 1px solid #e5e5e5;
-  background: #fff;
+  border: 1px solid var(--primary-color);
+  background: rgba(88,101,242,0.08);;
   cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid var(--primary-color);
 }
 
 .btn.primary {
@@ -188,11 +233,7 @@ input[type="checkbox"]:checked + .chip {
   border-color: var(--primary-color);
 }
 
-.btn.ghost {
-  background: #fff;
-}
-
-.stack > * + * {
+.link-row {
   margin-top: 8px;
 }
 
@@ -206,16 +247,96 @@ input[type="checkbox"]:checked + .chip {
   margin-bottom: 8px;
 }
 
-.career-desc {
-  resize: vertical;
+.career-period-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  grid-template-areas: "label from tilde to";
+  align-items: center;
+  gap: 8px;
 }
 
-/* 포트폴리오 파일 리스트 */
+.career-period-row > .year-input:nth-of-type(1) { grid-area: from; }
+.career-period-row > .year-input:nth-of-type(2) { grid-area: to; }
+.tilde { grid-area: tilde; color: var(--gray-color); }
+
+.field-label { 
+  font-size: var(--font-md); 
+  color: #333; 
+}
+.career-period-row .field-label {
+  grid-area: label;
+}
+.year-input { 
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.career-company-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+.career-brief {
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.career-desc {
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+}
+.year-input:focus,
+.career-brief:focus,
+.career-desc:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.12);
+}
+
+@media (max-width: 720px) {
+  .career-period-row {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+      "label label label"
+      "from  tilde to";
+  }
+  .tilde { justify-self: center; }
+
+  .career-company-row {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+/* 포트폴리오 */
+.link-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.btn-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
 .file-list {
   list-style: none;
   padding-left: 0;
   display: grid;
-  gap: 6px;
+  gap: 8px;
 }
 
 .file-list li {
@@ -227,24 +348,32 @@ input[type="checkbox"]:checked + .chip {
 
 .file-list a {
   text-decoration: underline;
-  word-break: break-all;
+  color: var(--border-color);
+}
+
+.form-control {
+  border: 1px solid var(--gray-color);
 }
 
 /* 자기소개 */
-#aboutMe {
+.aboutMe {
   width: 100%;
   resize: vertical;
 }
 
-/* 저장 영역 */
-.actions {
+.save-area {
   display: flex;
   align-items: center;
   gap: 12px;
   justify-content: flex-end;
 }
 
-.save-tip {
-  color: var(--gray-color);
-  font-size: var(--font-md);
+@media (max-width: 720px) {
+  .save-area {
+    justify-content: center;
+  }
+  .save-area .btn {
+    width: 100%;
+    display: block;
+  }
 }
