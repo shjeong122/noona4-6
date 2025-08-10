@@ -1,12 +1,10 @@
 .card {
   box-shadow: 0 0 5px var(--primary-color);
 }
-
 .fa-solid,
 i {
   color: var(--primary-color);
 }
-
 .form-control:focus,
 .form-check-input:focus {
   border-color: var(--brand);
