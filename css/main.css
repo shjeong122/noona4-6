@@ -15,22 +15,28 @@ i {
 }
 p {
   margin: 0;
-
 }
 
 /* 소개 */
 .present {
   display: flex;
-    justify-content: space-evenly;
-  border: 0.6rem outset var( --primary-hover);
+  justify-content: space-between;
+  text-align: center;
+  width: 70%;
+  border: 0.6rem outset var(--primary-hover);
   border-radius: 50px;
-  margin: 10px 200px;
+  margin: 10px 100px;
   padding: 0px 0px;
-
   font-family: bmjua;
   font-size: var(--font-xl);
   line-height: 30px;
-  text-align: center;
+
+}
+.present_logo {
+  max-width: 20%;
+}
+.present_contents {
+  min-width: 80%;
 }
 .font1 {
   font-size: var(--font-2xl);
@@ -44,7 +50,6 @@ p {
   margin: 40px;
   padding: 0;
   color: var(--primary-color);
-
 }
 
 /* 중간 코알라 */
