@@ -16,6 +16,11 @@ i {
 p {
   margin: 0;
 }
+@media screen and (max-width:48rem) {
+  .present{
+    flex-direction:col;
+  }
+}
 
 /* 소개 */
 .present {
