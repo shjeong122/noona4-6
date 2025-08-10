@@ -99,17 +99,56 @@
             </div>
 
             <div class="d-flex w-100 justify-content-between">
-              <a href="../login/index.html" class="mx-2 w-50">
-                <button
-                  onclick="alert('비밀번호 재설정 메일을 보냈어요.')"
-                  class="btn w-100 py-2"
-                >
-                  인증
-                </button>
-              </a>
+              <button
+                type="button"
+                class="btn w-50 py-2"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+              >
+                인증
+              </button>
+
               <a href="../login/index.html" class="mx-2 w-50">
                 <button class="btn w-100 py-2">취소</button>
               </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Modal -->
+        <div
+          class="modal fade"
+          id="exampleModal"
+          tabindex="-1"
+          aria-labelledby="exampleModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="exampleModalLabel">
+                  비밀번호 재설정 메일을 보냈습니다.
+                </h1>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-footer">
+                <button
+                  type="button"
+                  class="btn btn-secondary"
+                  data-bs-dismiss="modal"
+                >
+                  <a
+                    class="text-decoration-none text-reset"
+                    href="../login/index.html"
+                    >확인</a
+                  >
+                </button>
+              </div>
             </div>
           </div>
         </div>
