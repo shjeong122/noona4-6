@@ -1,0 +1,360 @@
+.main_conteiner{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 100px 50px;
+}
+@media (max-width: 720px) {
+  .main_conteiner{
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 24px 30px 50px;
+  }
+}
+
+/* 카드 공통 */
+.card, .profile-card {
+  background: white;
+  border: 2px solid var(--border-color);
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 1px 2px rgba(0,0,0,.03);
+}
+
+/* 섹션 타이틀 */
+.section-title {
+  font-size: var(--font-xl);
+  margin: 0 0 12px;
+}
+
+.sub-title {
+  font-size: var(--font-lg);
+  margin: 16px 0 8px;
+}
+
+/* 프로필 영역 */
+.profile-card {
+  display: grid;
+  gap: 16px;
+}
+
+.avatar-wrap {
+  display: grid;
+  justify-items: center;
+  gap: 8px;
+}
+
+.avatar {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border-color);
+}
+
+.avatar-btn {
+  display: inline-block;
+  font-size: var(--font-md);
+  color: #fff;
+  background: var(--primary-color);
+  padding: 8px 12px;
+  border-radius: 999px;
+  cursor: pointer;
+}
+
+.profile-basic .field {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.profile-basic label {
+  font-size: var(--font-md);
+}
+
+.profile-basic input,
+textarea,
+.link-row input,
+.skill-name,
+.career-period,
+.career-title,
+.career-desc,
+.form-select {
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+}
+
+.profile-basic input:focus,
+textarea:focus,
+.link-row input:focus,
+.skill-name:focus,
+.career-period:focus,
+.career-title:focus,
+.career-desc:focus,
+.form-select:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.12);
+}
+
+.grid-2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+@media (max-width: 720px) {
+  .grid-2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.input-with-unit {
+  display: flex;
+  align-items: center;
+}
+
+.input-with-unit .form-control {
+  width: 200px;
+  margin-right: 8px;
+}
+
+.input-with-unit .unit {
+  font-size: var(--font-lg);
+  color: #333;
+}
+
+/* 관심분야 */
+.chip {
+  color: var(--gray-color);
+  font-size: var(--font-md);
+  margin: 0 0 8px;
+}
+
+.chip-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.chip {
+  padding: 8px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 999px;
+  font-size: var(--font-md);
+  cursor: pointer;
+  display: inline-block;
+  margin: 0 8px 8px 0;
+}
+
+input[type="checkbox"]:checked + .chip {
+  background: rgba(88,101,242,0.08);
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+/* 스킬 */
+.skill-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+@media (max-width: 720px) {
+  .skill-row {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas:
+      "name name name"
+      "high mid low"
+      "btn btn btn";
+  }
+
+  .skill-row > :nth-child(1) { grid-area: name; }
+  .skill-row > :nth-child(2) { grid-area: high; }
+  .skill-row > :nth-child(3) { grid-area: mid; }
+  .skill-row > :nth-child(4) { grid-area: low; }
+  .skill-row > :nth-child(5) { grid-area: btn; }
+
+  .skill-row .form-check {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 0;
+  }
+}
+
+.skill-name {
+  width: 100%;
+}
+
+.skill-level label {
+  margin-right: 8px;
+  font-size: var(--font-md);
+}
+
+.btn {
+  font-size: var(--font-md);
+  padding: 8px 12px;
+  border-radius: 8px;
+  border: 1px solid var(--primary-color);
+  background: rgba(88,101,242,0.08);;
+  cursor: pointer;
+}
+.btn:hover {
+  border: 1px solid var(--primary-color);
+}
+
+.btn.primary {
+  background: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.link-row {
+  margin-top: 8px;
+}
+
+/* 경력 */
+.career-item {
+  display: grid;
+  gap: 8px;
+  padding: 12px;
+  border: 1px dashed #e5e5e5;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+
+.career-period-row {
+  display: grid;
+  grid-template-columns: auto 1fr auto 1fr;
+  grid-template-areas: "label from tilde to";
+  align-items: center;
+  gap: 8px;
+}
+
+.career-period-row > .year-input:nth-of-type(1) { grid-area: from; }
+.career-period-row > .year-input:nth-of-type(2) { grid-area: to; }
+.tilde { grid-area: tilde; color: var(--gray-color); }
+
+.field-label { 
+  font-size: var(--font-md); 
+  color: #333; 
+}
+.career-period-row .field-label {
+  grid-area: label;
+}
+.year-input { 
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.career-company-row {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  align-items: center;
+  gap: 8px;
+}
+.career-brief {
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+  width: 100%;
+}
+
+.career-desc {
+  font-size: var(--font-lg);
+  padding: 10px 12px;
+  border: 1px solid var(--gray-color);
+  border-radius: 8px;
+  outline: none;
+  resize: vertical;
+}
+.year-input:focus,
+.career-brief:focus,
+.career-desc:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 3px rgba(88, 101, 242, 0.12);
+}
+
+@media (max-width: 720px) {
+  .career-period-row {
+    grid-template-columns: 1fr auto 1fr;
+    grid-template-areas:
+      "label label label"
+      "from  tilde to";
+  }
+  .tilde { justify-self: center; }
+
+  .career-company-row {
+    grid-template-columns: auto 1fr;
+  }
+}
+
+/* 포트폴리오 */
+.link-row {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 8px;
+  align-items: center;
+  margin-bottom: 8px;
+}
+.btn-row {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+.file-list {
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.file-list li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--font-md);
+}
+
+.file-list a {
+  text-decoration: underline;
+  color: var(--border-color);
+}
+
+.form-control {
+  border: 1px solid var(--gray-color);
+}
+
+/* 자기소개 */
+.aboutMe {
+  width: 100%;
+  resize: vertical;
+}
+
+.save-area {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  justify-content: flex-end;
+}
+
+@media (max-width: 720px) {
+  .save-area {
+    justify-content: center;
+  }
+  .save-area .btn {
+    width: 100%;
+    display: block;
+  }
+}

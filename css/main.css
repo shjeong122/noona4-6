@@ -1,0 +1,192 @@
+/* 
+1. **박스 모델**: `display`, `width`, `height`, `margin`, `padding`
+2. **텍스트**: `font-size`, `line-height`, `color`, `text-align`
+3. **스타일**: `background`, `border`, `box-shadow`, `transition`
+4. **기타**: `cursor`, `z-index`, `position` 등
+*/
+
+/* main area */
+a {
+  text-decoration: none;
+}
+i {
+  background-color: white;
+  padding: 10px 0px 5px;
+}
+p {
+  margin: 0;
+}
+
+/* 소개 */
+.present {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  max-width: 60%;
+  border: 0.6rem outset var(--primary-hover);
+  border-radius: 50px;
+  padding: 10px 20px;
+  font-family: bmjua;
+  font-size: var(--font-xl);
+  line-height: 30px;
+}
+.present_logo {
+  max-width: auto;
+}
+.present_contents {
+  max-width: auto;
+}
+.font1 {
+  font-size: var(--font-2xl);
+  font-weight: bolder;
+  margin: 20px;
+  padding: 0;
+}
+.font2 {
+  font-size: var(--font-2xl);
+  font-weight: bolder;
+  margin: 40px;
+  padding: 0;
+  color: var(--primary-color);
+}
+
+
+/* 중간 코알라 */
+.term {
+  display: flex;
+  justify-content: center;
+}
+
+/* 구획 */
+.block {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  font-size: var(--font-2xl);
+}
+.title {
+  display: flex;
+  justify-content: center;
+  font-family: BMJUA;
+}
+.nav_title h2 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: var(--font-2xl);
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 30px;
+}
+.nav_title h3 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: var(--font-xl);
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 30px 0 15px 0;
+}
+.category {
+  display: flex;
+  justify-content: center;
+  font-size: var(--font-xl);
+  gap: 30px;
+}
+
+/* card area */
+.contents {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.cards {
+  gap: 20px;
+  display: flex;
+  justify-content: center;
+}
+.card {
+  color: #000;
+  width: 340px;
+  border-radius: 28px;
+  border: 2px solid var(--border-color);
+  background: #fff;
+  cursor: pointer;
+}
+.box_button {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+.box_alert {
+  border-radius: 20px;
+  padding: 2px 8px;
+  height: 20px;
+  color: #ea726f;
+  border: 1px solid #ea726f;
+  font-weight: 600;
+  font-size: var(--font-sm);
+  align-content: center;
+}
+.box_category {
+  border-radius: 20px;
+  padding: 2px 8px;
+  height: 20px;
+  background: #efefef;
+  color: #656565;
+  font-weight: 600;
+  font-size: var(--font-sm);
+  align-content: center;
+}
+.box_contents {
+  height: 40px;
+  margin: 0;
+  color: #000;
+  font-size: var(--font-md);
+  font-weight: 600;
+  letter-spacing: -0.05rem;
+  margin-top: 10px;
+}
+.d_day {
+  color: #999;
+  margin: 10px 0px;
+  font-size: 14px;
+  font-weight: 600;
+}
+.box_count {
+  color: #4e4e4e;
+  font-size: var(--font-sm);
+  font-weight: 500;
+  margin: 15px 0px 8px;
+  text-align: end;
+}
+
+/* 반응형_모바일 */
+@media screen and (max-width: 48rem) {
+  .present {
+    display: flex;
+    flex-direction: column;
+  }
+  .present_logo {
+    margin: auto;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+  }
+  .title h2{
+    margin: 0px;
+  }
+  i {
+    align-content: center;
+  }
+  .total .row {
+    min-height: 100px;
+    flex-wrap: wrap;
+  }
+}

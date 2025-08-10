@@ -1,0 +1,28 @@
+.card {
+  box-shadow: 0 0 5px var(--primary-color);
+}
+.fa-solid,
+i {
+  color: var(--primary-color);
+}
+.form-control:focus,
+.form-check-input:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(59, 74, 238, 0.25);
+}
+.login-card {
+  max-width: 420px;
+  width: 100%;
+}
+.btn {
+  background-color: var(--primary-color);
+  color: white;
+}
+.btn:hover {
+  background-color: var(--primary-hover);
+  color: white;
+}
+.btn:active {
+  background-color: var(--primary-hover) !important;
+  color: white !important;
+}
