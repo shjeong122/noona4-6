@@ -41,6 +41,9 @@ html {
   padding: 0;
   box-sizing: border-box;
 }
+html, body {
+  height: 100%;
+}
 body {
   display: flex;
   justify-content: center;
@@ -48,6 +51,9 @@ body {
 }
 .wrap {
   width: var(--max-width) !important;
+  min-height: 100vh;        /* 화면 높이만큼 최소 높이 */
+  display: flex;            /* 세로 플렉스 컨테이너 */
+  flex-direction: column;
 }
 
 /* navbar area */
