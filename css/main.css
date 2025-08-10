@@ -9,16 +9,59 @@
 a {
   text-decoration: none;
 }
-/* 이번주 인기글 area */
+i {
+  background-color: white;
+  padding: 10px 0px 5px;
+}
+p {
+  margin: 0;
+
+}
+
+/* 소개 */
+.present {
+  display: flex;
+    justify-content: space-evenly;
+  border: 0.6rem outset var( --primary-hover);
+  border-radius: 50px;
+  margin: 10px 200px;
+  padding: 0px 0px;
+
+  font-family: bmjua;
+  font-size: var(--font-xl);
+  line-height: 30px;
+  text-align: center;
+}
+.font1 {
+  font-size: var(--font-2xl);
+  font-weight: bolder;
+  margin: 20px;
+  padding: 0;
+}
+.font2 {
+  font-size: var(--font-2xl);
+  font-weight: bolder;
+  margin: 40px;
+  padding: 0;
+  color: var(--primary-color);
+
+}
+/* 중간 코알라 */
+.term {
+  display: flex;
+  justify-content: center;
+}
+
+/* 구획 */
 .block {
-padding-top: 50px;
+  padding-top: 30px;
   padding-bottom: 50px;
   font-size: var(--font-2xl);
 }
 .title {
-    display: flex;
-    justify-content: center;
-    font-family: BMJUA;
+  display: flex;
+  justify-content: center;
+  font-family: BMJUA;
 }
 .nav_title > h2 {
   display: flex;
@@ -35,12 +78,9 @@ padding-top: 50px;
   justify-content: center;
   font-size: var(--font-xl);
   gap: 30px;
-  /* margin: 20px 0px 20px; */
 }
-i {
- background-color: white;
- padding: 10px 0px 5px;
-}
+
+
 /* card area */
 .contents {
   display: flex;
@@ -81,7 +121,6 @@ i {
   height: 20px;
   background: #efefef;
   color: #656565;
-  /* border: 1px solid #656565; */
   font-weight: 600;
   font-size: var(--font-sm);
   align-content: center;
@@ -107,25 +146,4 @@ i {
   font-weight: 500;
   margin: 15px 0px 8px;
   text-align: end;
-}
-
-/* main_nav area */
-.main_contents {
-  margin: 20px 0px 50px;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  font-weight: 700;
-  font-size: var(--font-2xl);
-}
-.main_nav {
-  display: flex;
-  justify-content: space-between;
-  margin: 40px 0px;
-}
-.main_list {
-  color: black;
-  font-weight: 700;
-  font-size: var(--font-2xl);
-  cursor: pointer;
 }
