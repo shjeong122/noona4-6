@@ -46,6 +46,7 @@ p {
   color: var(--primary-color);
 
 }
+
 /* 중간 코알라 */
 .term {
   display: flex;
@@ -79,7 +80,6 @@ p {
   font-size: var(--font-xl);
   gap: 30px;
 }
-
 
 /* card area */
 .contents {
