@@ -5,7 +5,7 @@
 4. **기타**: `cursor`, `z-index`, `position` 등
 */
 
-/* === 메인 섹션 === */
+/* 메인 섹션 */
 
 .fa-angle-left {
   font-size: var(--font-2xl);
@@ -35,14 +35,14 @@
   margin: 48px auto 0;
   padding: 1.5rem 1.5rem 5rem;
 }
-/* === 768px 이하 화면(모바일)에서 상단 마진 축소 === */
+/* 768px 이하 화면(모바일)에서 상단 마진 축소 */
 @media (max-width: 768px) {
   .main-section {
     margin-top: 0px;
   }
 }
 
-/* === 메인 제목 === */
+/* 메인 제목 */
 .main-title {
   display: block;
   margin-top: 28px;
@@ -54,7 +54,7 @@
   color: var(--color-text, #000);
   overflow-wrap: break-word;
 }
-/* === 화면 폭 768px 이하일 때 글자 크기 축소 === */
+/* 화면 폭 768px 이하일 때 글자 크기 축소 */
 @media (max-width: 768px) {
   .main-title {
     font-size: 1.3rem;
@@ -62,7 +62,7 @@
   }
 }
 
-/* === 사용자 정보 === */
+/* 사용자 정보 */
 .user-info {
   display: flex;
   align-items: center;
@@ -76,7 +76,7 @@
   border-bottom: 3px solid #f2f2f2;
 }
 
-/* === 모집 정보 === */
+/* 모집 정보 */
 .information {
   display: block;
   margin: 2rem 0;
@@ -95,7 +95,7 @@
   margin: 0;
 }
 
-/* --- 모집 정보 텍스트 --- */
+/* 모집 정보 텍스트 */
 .info-title {
   font-size: var(--font-lg);
   font-weight: 700;
@@ -114,7 +114,7 @@
   margin: 4px;
 }
 
-/* --- 지원, 문의 버튼 --- */
+/* 지원, 문의 버튼 */
 .apply-buttons {
   display: flex;
   justify-content: end;
@@ -153,19 +153,19 @@
   border: 2px solid #999999;
 }
 
-/* --- 모바일 전용 버튼: 기본은 숨김 --- */
+/* 모바일 전용 버튼: 기본은 숨김 */
 .apply-buttons-mobile {
   display: none;
 }
 
-/* --- 모바일 전용 스타일 --- */
+/* 모바일 전용 스타일 */
 @media (max-width: 768px) {
-  /* --- 데스크톱 버튼 숨기기 --- */
+  /* 데스크톱 버튼 숨기기 */
   .apply-buttons {
     display: none;
   }
 
-  /* --- 모바일 버튼 보이기 --- */
+  /* 모바일 버튼 보이기 */
   .apply-buttons-mobile {
     display: flex;
     position: fixed;
@@ -210,7 +210,7 @@
   justify-content: center;
 }
 
-/* --- 모집 내용 --- */
+/* 모집 내용 */
 .post-content-area {
   margin: 80px 0;
 }
