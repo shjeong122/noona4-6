@@ -16,32 +16,25 @@ i {
 p {
   margin: 0;
 }
-@media screen and (max-width:48rem) {
-  .present{
-    flex-direction:col;
-  }
-}
 
 /* 소개 */
 .present {
   display: flex;
   justify-content: space-between;
   text-align: center;
-  width: 70%;
+  max-width: 60%;
   border: 0.6rem outset var(--primary-hover);
   border-radius: 50px;
-  margin: 10px 100px;
-  padding: 0px 0px;
+  padding: 10px 20px;
   font-family: bmjua;
   font-size: var(--font-xl);
   line-height: 30px;
-
 }
 .present_logo {
-  max-width: 20%;
+  max-width: auto;
 }
 .present_contents {
-  min-width: 80%;
+  max-width: auto;
 }
 .font1 {
   font-size: var(--font-2xl);
@@ -56,6 +49,7 @@ p {
   padding: 0;
   color: var(--primary-color);
 }
+
 
 /* 중간 코알라 */
 .term {
@@ -74,7 +68,7 @@ p {
   justify-content: center;
   font-family: BMJUA;
 }
-.nav_title > h2 {
+.nav_title h2 {
   display: flex;
   justify-content: center;
   color: #000;
@@ -83,6 +77,16 @@ p {
   font-weight: 700;
   cursor: pointer;
   margin: 30px;
+}
+.nav_title h3 {
+  display: flex;
+  justify-content: center;
+  color: #000;
+  font-size: var(--font-xl);
+  font-style: normal;
+  font-weight: 700;
+  cursor: pointer;
+  margin: 30px 0 15px 0;
 }
 .category {
   display: flex;
@@ -156,4 +160,33 @@ p {
   font-weight: 500;
   margin: 15px 0px 8px;
   text-align: end;
+}
+
+/* 반응형_모바일 */
+@media screen and (max-width: 48rem) {
+  .present {
+    display: flex;
+    flex-direction: column;
+  }
+  .present_logo {
+    margin: auto;
+  }
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 50px;
+  }
+  .title h2{
+    margin: 0px;
+  }
+  i {
+    align-content: center;
+  }
+  .total .row {
+    min-height: 100px;
+    flex-wrap: wrap;
+  }
 }
